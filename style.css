@@ -1,0 +1,25 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+body {
+  padding: 20px 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.entries {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.entries p {
+  width: 100%;
+  text-align: left;
+  
+}
