@@ -13,16 +13,28 @@
 
   function RouterFunction ($stateProvider) {
     $stateProvider
-    .state('gramIndex', {
-      url: '/grams',
+    .state('entryIndex', {
+      url: '/entries',
       templateUrl: 'js/ng-views/index.html',
-      controller: 'GramIndexController',
+      controller: 'EntryIndexController',
       controllerAs: 'vm'
     })
-    .state('gramShow', {
-      url: '/grams/:id',
+    .state('entryNew', {
+      url: '/entries/new',
+      templateUrl: 'js/ng-views/new.html',
+      controller: 'EntryNewController',
+      controllerAs: 'vm'
+    })
+    .state('entryShow', {
+      url: '/entries/:id',
       templateUrl: 'js/ng-views/show.html',
-      controller: 'GramShowController',
+      controller: 'EntryShowController',
+      controllerAs: 'vm'
+    })
+    .state ('entryEdit', {
+      url: 'entries/:id/edit',
+      templateUrl: 'js/ng-views/edit.html',
+      controller: 'EntryEditController',
       controllerAs: 'vm'
     })
   }

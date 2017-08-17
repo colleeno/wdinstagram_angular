@@ -7,17 +7,20 @@ img {
 
 body {
   padding: 20px 100px;
-}
-
-h1 {
   text-align: center;
 }
 
 .entries {
   width: 60%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .show {
   width: 90%;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
 }

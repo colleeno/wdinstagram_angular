@@ -14,11 +14,14 @@
     <script src="js/services/wdinstagram.service.js"></script>
     <script src="js/controllers/index.controller.js"></script>
     <script src="js/controllers/show.controller.js"></script>
+    <script src="js/controllers/new.controller.js"></script>
+    <script src="js/controllers/edit.controller.js"></script>
   </head>
   <body>
-    <h1>WDInstagram</h1>
+    <h1><a ui-sref="entryIndex">WDInstagram</a></h1>
     <main ui-view>
-      <a ui-sref="gramIndex">View grams</a>
+      <a ui-sref="entryNew">Post gram</a> |
+      <a ui-sref="entryIndex">View grams</a>
     </main>
   </body>
 </html>

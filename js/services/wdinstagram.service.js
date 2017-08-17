@@ -1,11 +1,11 @@
 angular
 .module('wdinstagram')
-.factory('Gram', [
+.factory('Entry', [
   '$resource',
-  gramService
+  entryService
 ])
 
-function gramService ($resource) {
+function entryService ($resource) {
   return $resource('http://localhost:3000/entries/:id', {}, {
       update: {method: 'PUT'}
     })

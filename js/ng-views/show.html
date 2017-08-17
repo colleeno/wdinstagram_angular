@@ -1,5 +1,6 @@
 <div class="entries show">
-  <img ng-src="{{vm.gram.photo_url}}" />
-  <p>{{vm.gram.author}}<p>
-  <p>{{vm.gram.body}}<p>
+  <img ng-src="{{vm.entry.photo_url}}" />
+  <p>{{vm.entry.author}}<p>
+  <p>{{vm.entry.body}}<p>
+  <a ui-sref="entryEdit({id: vm.entry.id})">Edit or Delete Post</a>
 <div>

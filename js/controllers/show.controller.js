@@ -1,11 +1,11 @@
 angular
 .module('wdinstagram')
-.controller('GramShowController', [
+.controller('EntryShowController', [
   '$stateParams',
-  'Gram',
-  GramShowController
+  'Entry',
+  EntryShowController
 ])
 
-function GramShowController($stateParams, Gram) {
-  this.gram = Gram.get({id: $stateParams.id})
+function EntryShowController($stateParams, Entry) {
+  this.entry = Entry.get({id: $stateParams.id})
 }

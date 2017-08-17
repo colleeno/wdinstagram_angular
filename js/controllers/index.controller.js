@@ -1,9 +1,9 @@
 angular.module('wdinstagram')
-.controller('GramIndexController', [
-  'Gram',
-  GramIndexController
+.controller('EntryIndexController', [
+  'Entry',
+  EntryIndexController
 ])
 
-function GramIndexController (Gram) {
-    this.grams = Gram.query()
+function EntryIndexController (Entry) {
+    this.entries = Entry.query()
   }

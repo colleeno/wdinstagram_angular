@@ -1,3 +1,4 @@
-<div ng-repeat="gram in vm.grams" class="entries">
-  <a ui-sref="gramShow({id: gram.id})"><img ng-src="{{gram.photo_url}}" /></a>
+<a ui-sref="entryNew">Post gram</a>
+<div ng-repeat="entry in vm.entries" class="entries">
+  <a ui-sref="entryShow({id: entry.id})"><img ng-src="{{entry.photo_url}}" /></a>
 </div>
